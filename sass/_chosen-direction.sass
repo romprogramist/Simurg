@@ -1,0 +1,53 @@
+body        
+    main
+    .transition-from-the-circle
+        background: red
+        .black-wrapper
+            form
+                .d-flex
+                    label
+                        display: block
+                        margin-top: 15px
+    .choice
+        .wrapper
+            .items
+                margin-top: 40px                
+                .item
+                    margin: 15px auto 0 auto
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    position: relative
+                    width: 250px
+                    .circle
+                        width: 100%
+                        border-radius: 50%
+                        box-shadow: 10px 5px 5px #e4e4e4
+                    p
+                        text-align: center
+                        margin-top: 10px
+                        font-weight: 600
+                        font-size: 20px
+                    .flag
+                        position: absolute
+                        right: 5px
+                        width: 30px
+
+@media screen and ( min-width: 440px )
+    body        
+        main
+            .choice
+                .wrapper
+                    .items
+                        display: flex
+                        justify-content: center
+                        flex-wrap: wrap                        
+                        .item
+                            margin: 15px 15px 0 15px
+
+@media screen and ( min-width: 960px )
+    body        
+        main
+            .transition-from-the-circle               
+                .img-wrapper1               
+                    background: url(../bg/choice-of-direction-bg.jpg) center center/cover no-repeat                    

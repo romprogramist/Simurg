@@ -1,0 +1,125 @@
+body
+    main
+        .not-main-request        
+            .black-wrapper
+                background: #2c4564  
+                form
+                    .title
+                        span
+                            color: #2196f3
+        .instruction
+            .wrapper
+                margin: 0 auto
+                .item
+                    max-width: 800px 
+                    width: 100%
+                    margin: 20px auto
+                    p
+                        strong
+                            color: #2196f3 
+                            font-size: 24px
+                .item-b
+                    position: relative
+                    &::before
+                        content: 'Страны, входящие в АТЭС'
+                        position: absolute
+                        top: -75px
+                        left: 0
+                        color: #2196f3
+                        font-size: 25px
+                        font-weight: 800
+                .item-100
+                    margin-top: 0
+                    
+        .advantages
+            .wrapper
+                max-width: 1260px 
+                margin: 0 auto              
+                .items         
+                    margin: 0 auto                                                                
+                    .item
+                        max-width: 800px 
+                        width: 100%
+                        height: 300px
+                        // margin: 20px 10px 0 10px
+                        margin: 20px auto
+                        display: flex
+                        justify-content: center
+                        position: relative
+                        p
+                            position: absolute
+                            width: 130px
+                            color: #fff
+                            font-weight: 600
+                            font-size: 20px
+
+                    .item:nth-child(1)
+                        background: url(../img/bg_ates_1.jpeg) center center/cover no-repeat
+                        position: relative 
+                        &::before
+                            content: 'Преимущества этой карты:'
+                            position: absolute
+                            left: 0
+                            top: -75px
+                            color: #2196f3
+                            font-size: 25px
+                            font-weight: 800
+                        p
+                            left: 50%
+                            transform: translateX(-50%)   
+                            top: 20px
+                            text-align: center
+                    .item:nth-child(2)
+                        color: blue
+                        background: url(../img/bg_ates_2.jpeg) center center/cover no-repeat
+                        p
+                            left: 20px
+                            top: 50%
+                            transform: translateY(-50%)
+                            color: #1e637f
+                    .item:nth-child(3)
+                        color: black
+                        background: url(../img/bg_ates_3.jpeg) center center/cover no-repeat
+                        p
+                            left: 20px
+                            bottom: 20px                            
+                    .item:nth-child(4)
+                        color: pink
+                        background: url(../img/bg_ates_4.jpeg) center center/cover no-repeat
+                        p
+                            right: 20px
+                            top: 50%
+                            transform: translateY(-50%)
+                            text-align: right                                                    
+                        
+@media screen and ( min-width: 960px )
+    body        
+        main
+            .not-main-request               
+                .img-wrapper4                
+                    background: url(../bg/ates-bg.jpeg) center center/cover no-repeat
+                    width: 50%
+@media screen and ( min-width: 1280px )
+    body
+        main
+            .instruction
+                .wrapper
+                    max-width: 1260px 
+                    display: flex
+                    justify-content: space-between
+                    .item
+                        max-width: 49%
+                        margin: 0
+                    .item-100
+                        max-width: 100%
+            .advantages
+                .wrapper
+                    .items   
+                        display: flex
+                        flex-wrap: wrap
+                        justify-content: space-between    
+                        .item
+                            max-width: 305px    
+                        .item:nth-child(1)
+                            p
+                                text-align: left 

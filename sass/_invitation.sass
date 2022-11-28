@@ -1,0 +1,82 @@
+body
+    main
+        .not-main-request        
+            .black-wrapper
+                background:  #29282c
+                form
+                    .titleRf
+                        span
+                            color: #ff6c02
+                    .under-the-form
+                        p
+                            color: #fff
+                            font-weight: 600
+                            line-height: 24px
+                            text-align: center
+                            margin-top: 13px
+                            font-size: 17px
+                            span
+                                color: #2196f3
+        .type-of-invitations
+            .wrapper
+                max-width: 622px
+                margin: 0 auto
+                .title
+                    & > p
+                        font-size: 24px
+                        font-weight: 600
+                    & > span
+                        font-size: 18px
+                        font-weight: 300
+                .items
+                    display: flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    margin-top: 25px
+                    .item
+                        max-width: 620px
+                        background: #234d82
+                        padding: 20px
+                        color: #fff
+                        margin: 10px auto
+                        span
+                            font-weight: 800
+                            font-size: 24px
+                        p
+                            margin-top: 10px
+                            line-height: 22px
+        .instruction       
+            .wrapper
+                max-width: 800px
+                .item
+                    & > div
+                        margin-top: 10px
+                    .bot
+                        margin-top: 15px
+                .title
+                    & > p
+                        font-size: 24px
+                        font-weight: 600
+                    & > span
+                        font-size: 18px
+                        font-weight: 300
+                .item2
+                    margin-top: 25px
+
+@media screen and ( min-width: 960px )
+    body        
+        main
+            .not-main-request                
+                .img-wrapper3
+                    display: block       
+                    background: url(../bg/invitation_bg.jpeg) center center/cover no-repeat
+                    width: 50%
+@media screen and ( min-width: 1300px )
+    body        
+        main
+            .type-of-invitations
+                    .wrapper
+                        max-width: 1260px      
+            .instruction       
+                .wrapper
+                    max-width: 1260px          
