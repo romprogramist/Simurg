@@ -2,6 +2,10 @@
 
 $phone = $_POST['phone'];
 $name = $_POST['name'];
+$country = $_POST['country'];
+$typeVisa = $_POST['typeVisa'];
+$numberOfPersons = $_POST['numberOfPersons'];
+$date = $_POST['date'];
 
 
 require_once('phpmailer/PHPMailerAutoload.php');
@@ -13,13 +17,13 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.yandex.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'carpetWashing1@yandex.ru';              // Наш логин
-$mail->Password = 'ivrnknnlfydtgtsg';          // Наш пароль от ящика
+$mail->Username = 'Simurgvisa@yandex.ru';              // Наш логин
+$mail->Password = 'dkffcdkcmworyhoo';          // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                        // TCP port to connect to
  
-$mail->setFrom('carpetWashing1@yandex.ru', 'carpetWashing1');   // От кого письмо 
-$mail->addAddress('carpetWashing1@yandex.ru');     // Add a recipient
+$mail->setFrom('Simurgvisa@yandex.ru', 'Simurgvisa');   // От кого письмо 
+$mail->addAddress('Simurgvisa@yandex.ru');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -28,11 +32,19 @@ $mail->addAddress('carpetWashing1@yandex.ru');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
+
+
+
 $mail->Subject = 'Данные';
 $mail->Body    = '
 Пользователь оставил данные <br> 
 Имя: ' . $name . ' <br>
-Номер телефона: ' . $phone . '';
+Номер телефона: ' . $phone . ' <br> 
+Cтрана: ' . $country . '<br>
+Тип Visa: ' . $typeVisa . '<br>
+Количество человек' . $numberOfPersons . '<br>
+Дата: ' . $date . '';
+
 
 if(!$mail->send()) {
     return false;

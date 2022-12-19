@@ -4,7 +4,6 @@ function maskTel(telInp) {
   let previousNumberCount = 1;
   let previousInputLength = 4;
   telInp.forEach((t) => {
-    console.log(t);
     t.addEventListener("input", () => {
       const valueString = t.value;
       const numbers = [];
