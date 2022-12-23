@@ -7,10 +7,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" type="image/x-icon" href="icon/fave-icon.png">
     <title>Simurg Visa - Визовый центр</title>
     <script src="//code.jivo.ru/widget/GxFpVoTEIj" async></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(91809180, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/91809180" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
     <div class="shadow"></div>
@@ -130,47 +147,51 @@
                     <div class="d-flex">
                         <label for="">
                             Ваше имя
-                            <input type="text" name="name" placeholder="Иван" id="name">
+                            <input type="text" required name="name" placeholder="Иван" id="name">
                         </label>
                         <label for="">
                             Ваш телефон
-                            <input type="tel" name="phone" placeholder="+7 (925) 815-21-89" id="tel">
+                            <input type="tel" required name="phone" placeholder="+7 (925) 815-21-89" id="tel">
                         </label>
                     </div>
                     <label for="">
                         Страна
-                        <input list="country" type="text" name="country" placeholder="Выбрать страну" id="">
+                        <input list="country" type="text" required name="country" placeholder="Выбрать страну" id="">
                         <datalist id="country">
                             <option>Австрия</option>
                             <option>Бельгия</option>
                             <option>Болгария</option>
-                            <option>Англия</option>
+                            <option>Чешская Республика</option>
                             <option>Венгрия</option>
                             <option>Германия</option>
                             <option>Греция</option>
                             <option>Дания</option>
-                            <option>Ирландия</option>
+                            <option>Эстония</option>
                             <option>Исландия</option>
+                            <option>Испания</option>
                             <option>Италия</option>
-                            <option>Италия</option>
-                            <option>Вьетнам</option>
-                            <option>Индия</option>
-                            <option>Китай</option>
-                            <option>Корея</option>
-                            <option>Индонезия</option>
-                            <option>Таиланда</option>
-                            <option>Шри-Ланки</option>
-                            <option>Япония</option>
-                            <option>Австралия</option>
-                            <option>Новая Зеландия</option>
-                            <option>Канада</option>
-                            <option>США</option>
-                            <option>Мексика</option>
+                            <option>Финляндия</option>
+                            <option>Франция</option>
+                            <option>Латвия</option>
+                            <option>Литва</option>
+                            <option>Люксембург</option>
+                            <option>Мальта</option>
+                            <option>Голландия</option>
+                            <option>Норвегия</option>
+                            <option>Польша</option>
+                            <option>Португалия</option>
+                            <option>Словакия</option>
+                            <option>Словения</option>
+                            <option>Швеция</option>
+                            <option>Швейцария</option>
+                            <option>Лихтенштейн</option>
+                            <option>Румыния</option>
+                            <option>Хорватия</option>
                         </datalist>
                     </label> 
                     <label for="">
                         Тип визы
-                        <input list="type-of-visa" type="text" name="typeVisa" placeholder="Тип визы" id="">
+                        <input list="type-of-visa" type="text" required name="typeVisa" placeholder="Тип визы" id="">
                         <datalist id="type-of-visa">
                             <option>Туристическая</option>
                             <option>Деловая</option>
@@ -182,11 +203,11 @@
                     <div class="d-flex">
                         <label for="">
                             Количество человек
-                            <input type="text" name="numberOfPersons" placeholder="Количество человек *" id="">
+                            <input type="text" name="numberOfPersons" required placeholder="Количество человек *" id="">
                         </label>
                         <label for="">
                             Дата 
-                            <input name="date" placeholder="dd.mm.yyyy" type="date" id="start" name="trip-start">    
+                            <input name="date" placeholder="dd.mm.yyyy" required type="date" id="start" name="trip-start">    
                         </label>
                     </div>
                     <button class="orange">Отправить</button>
@@ -306,31 +327,51 @@
                         <p>Норвегия</p>
                         <img class="flag" src="icon/flag-54.png" alt="">
                     </div>
-                    <!-- <div class="item">
-                        <img class="circle" src="/img/oceania_1.jpeg" alt="" title="">
-                        <p>Австралия</p>
-                        <img class="flag" src="icon/flag-24.png" alt="">
-                    </div> -->
-                    <!-- <div class="item">
-                        <img class="circle" src="/img/oceania_2.jpeg" alt="" title="">
-                        <p>Новая Зеландия</p>
-                        <img class="flag" src="icon/flag-24.png" alt="">
-                    </div> -->
-                    <!-- <div class="item">
-                        <img class="circle" src="/img/america_1.jpeg" alt="" title="">
-                        <p>Канада</p>
-                        <img class="flag" src="icon/flag-16.png" alt="">
-                    </div> -->
-                    <!-- <div class="item">
-                        <img class="circle" src="/img/america_2.jpeg" alt="" title="">
-                        <p>США</p>
-                        <img class="flag" src="icon/flag-32.png" alt="">
-                    </div> -->
-                    <!-- <div class="item">
-                        <img class="circle" src="/img/america_3.jpeg" alt="" title="">
-                        <p>Мексика</p>
-                        <img class="flag" src="icon/flag-22.png" alt="">
-                    </div> -->
+                    <div class="item">
+                        <img class="circle" src="/img/schengen_22.jpg" alt="" title="">
+                        <p>Польша</p>
+                        <img class="flag" src="icon/flag-55.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="circle" src="/img/schengen_23.jpg" alt="" title="">
+                        <p>Португалия</p>
+                        <img class="flag" src="icon/flag-56.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="circle" src="/img/schengen_24.jpg" alt="" title="">
+                        <p>Словакия</p>
+                        <img class="flag" src="icon/flag-57.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="circle" src="/img/schengen_25.jpg" alt="" title="">
+                        <p>Словения</p>
+                        <img class="flag" src="icon/flag-58.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="circle" src="/img/schengen_26.jpg" alt="" title="">
+                        <p>Швеция</p>
+                        <img class="flag" src="icon/flag-59.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="circle" src="/img/schengen_27.jpg" alt="" title="">
+                        <p>Швейцария</p>
+                        <img class="flag" src="icon/flag-60.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="circle" src="/img/schengen_28.jpg" alt="" title="">
+                        <p>Лихтенштейн</p>
+                        <img class="flag" src="icon/flag-61.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="circle" src="/img/schengen_29.jpg" alt="" title="">
+                        <p>Румыния</p>
+                        <img class="flag" src="icon/flag-62.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="circle" src="/img/schengen_30.jpg" alt="" title="">
+                        <p>Хорватия</p>
+                        <img class="flag" src="icon/flag-63.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>

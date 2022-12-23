@@ -1,4 +1,4 @@
-body   
+body
     header
         z-index: 999
         background: #fff
@@ -7,7 +7,7 @@ body
         top: 0
         transition: all 1s
         box-shadow: 0 1px 2px 1px #3a3a3a13
-        .wrapper      
+        .wrapper
             display: flex
             align-items: center
             justify-content: space-between
@@ -17,23 +17,23 @@ body
                         width: 200px
                         transition: all .3s
                         margin-bottom: 18px
-            .nav-menu            
-                padding-top: 110px   
+            .nav-menu
+                padding-top: 110px
                 width: 100%
                 height: 100vh
-                background: #FFFFFF   
+                background: #FFFFFF
                 position: fixed
-                right: -100%                
+                right: -100%
                 top: 0
                 transition: all .3s
                 display: flex
                 justify-content: center
-                align-items: flex-end 
+                align-items: flex-end
                 text-align: right
                 ul
                     li
                         margin-top: 20px
-                        list-style-type: none 
+                        list-style-type: none
                         a
                             color: #474747
                             font-weight: 700
@@ -47,7 +47,6 @@ body
                     left: 30px
                 & > .logo
                     display: none
-                
 
             .hamburger
                 cursor: pointer
@@ -58,18 +57,18 @@ body
                 justify-content: center
                 z-index: 999
                 & > div
-                    margin: 10px 0 0 auto 
+                    margin: 10px 0 0 auto
                     height: 4px
                     border-radius: 5px
                     background: #fca45d
                     transition: all .3s
-                :nth-child(1)
+                div:nth-child(1)
                     transition: all .3s
                     width: 35.62px
                     margin-top: 0
-                :nth-child(2)                
+                div:nth-child(2)
                     width: 41.56px
-                :nth-child(3)
+                div:nth-child(3)
                     transition: all .3s
                     width: 29.69px
             .contacts-big
@@ -81,7 +80,7 @@ body
             align-items: center
             height: 50px
             .messengers
-                margin-right: 10px 
+                margin-right: 10px
                 a
                     img
                         width: 40px
@@ -92,7 +91,7 @@ body
                     display: block
                     margin-top: 5px
                     color: #000
-                    font-size: 18px
+                    font-size: 15px
                 a:first-child
                     margin-top: 0
     .header_closing
@@ -113,7 +112,7 @@ body
                 & > div
                     margin-top: 7px
                     height: 3px
-                :nth-child(1)
+                div:nth-child(1)
                     margin-top: 0
 
         .contacts
@@ -131,45 +130,45 @@ body
                     font-size: 0
 
 .active_menu
-    overflow: hidden    
+    overflow: hidden
     .shadow
         transition: all .3s
         position: absolute
         height: 200vh
         width: 100%
-        background: rgba(0, 0, 0, 0.22)  
+        background: rgba(0, 0, 0, 0.22)
     header
         .wrapper
-            .hamburger                  
+            .hamburger
                 top: 52px
                 right: 10px
                 display: flex
                 align-items: center
-                :nth-child(1)
+                div:nth-child(1)
                     transition: all .3s
                     width: 41.56px
                     position: absolute
                     transform: rotate(-45deg)
-                :nth-child(2)              
+                div:nth-child(2)
                     width: 0
-                :nth-child(3)
+                div:nth-child(3)
                     transition: all .3s
                     margin-top: 0
                     width: 41.56px
                     position: absolute
                     transform: rotate(45deg)
-            .nav-menu               
+            .nav-menu
                 right: 0
                 top: 0
                 flex-direction: column
                 justify-content: space-around
-                
+
                 ul
                     margin-top: 30px
                     padding-right: 30px
                 .logo
                     display: block
-                    margin-top: 50px
+                    // margin-top: 50px
                     padding-right: 30px
                     img
                         width: 170px
@@ -190,11 +189,11 @@ body
 @media screen and ( min-width: 1200px )
     body
         & > header
-            padding: 20px 
+            padding: 20px
             .wrapper
                 display: flex
                 align-items: center
-                justify-content: space-between                
+                justify-content: space-between
                 .nav-menu
                     right: 0
                     background: transparent
@@ -237,7 +236,7 @@ body
             .none
                 display: none
         .header_closing
-            padding:  0 20px !important
+            padding: 0 20px !important
             .wrapper
                 .logo
                     a
